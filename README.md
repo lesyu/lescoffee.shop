@@ -310,3 +310,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html> 
+?brand=[![Netlify Status](https://api.netlify.com/api/v1/badges/40c764a6-c2fb-4cb7-8831-a83291a6f4bb/deploy-status)](https://app.netlify.com/sites/lescoffee/deploys)
