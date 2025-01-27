@@ -6,9 +6,16 @@
   publish = ".dist"
   command = "npm run build"
 # netlify.toml
+[build.environment]
+  VARIABLE = "root"
+[[plugins]]
+package = "netlify-plugin-check-output-for-puppy-references"
+  [plugins.inputs]
+  breeds = ["pomeranian", "chihuahua", "bulldog"]
+
 [[redirects]]
-from = '/_next/image/*'
-query = { q = ':quality', url = ':url', w = ':width' }
-to = '/.netlify/images?url=:url&w=:width&q=:quality'
-status = 200
-force = true
+  from = "https://lescoffee.shop/"
+  to = "https://lescoffee.com"
+  status = 301
+  force = true
+
